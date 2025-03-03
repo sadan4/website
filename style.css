@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+:root[data-theme="tokyo-night-dark"] {
+    --background: #1a1b26;
+    --background2: #15161e;
+    --surface: #414868;
+    --color: #a9b1d6;
+    --accent: #7aa2f7;
+}
+
+:root[data-theme="tokyo-night-storm"] {
+    --background: #24283b;
+    --background2: #1d202f;
+    --surface: #414868;
+    --color: #a9b1d6;
+    --accent: #7aa2f7;
+}
+
+:root[data-theme="tokyo-night-light"] {
+    --background: #e6e7ed;
+    --background2: #d9dae3;
+    --surface: #343b58;
+    --color: #343b58;
+    --accent: #2959aa;
+}
+
+body {
+    font-family: Inter;
+    background-color: var(--background);
+    color: var(--color);
+    margin: 0
+}
+
+main {
+    margin: 2em min(15%, 15%)
+}
+
+nav {
+    background-color: var(--background2);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    flex-flow: wrap
+}
+
+nav a {
+    padding: 0.5em;
+    color: var(--text)
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid var(--surface)
+}
+
+.name {
+    color: var(--accent);
+}
+
+svg {
+    width: 24px;
+    height: 24px;
+    margin-right: 0.5em;
+    shape-rendering: auto
+}
+
+.socials-list,
+.tech-stack-list {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    gap: 1rem
+}
+
+.repo {
+    all: unset;
+    position: relative;
+    display: grid;
+    background-color: var(--background2);
+    width: auto;
+    max-width: 20rem;
+    height: 7rem;
+    border-radius: 5px;
+    border: 1px solid var(--surface);
+    padding: 0.75rem;
+    cursor: pointer
+}
+
+.repo h4 {
+    margin: 0
+}
+
+.author {
+    align-items: center;
+    margin-bottom: 1em
+}
+
+.author img {
+    width: 1.2em;
+    height: 1.2em;
+    border-radius: 3px
+}
+
+.icon {
+    display: inline-flex;
+    align-items: center
+}
+
+.buttons,
+.theme-button {
+    display: inline-flex;
+    align-items: center
+}
+
+.theme-button {
+    padding-left: 1rem
+}
+
+ul {
+    list-style-type: none;
+    padding: 0
+}
+
+a {
+    text-decoration: none;
+    color: var(--accent)
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.username {
+    border: 1px solid var(--surface);
+    color: var(--text);
+    border-radius: 5px;
+    padding: 0.2em;
+    margin-left: 0.5em;
+    min-width: 5rem
+}
+
+.tech-stack-box {
+    border: 1px solid var(--surface);
+    color: var(--text);
+    border-radius: 5px;
+    padding: 0.2em;
+    margin-right: 0.5em
+}
+
+select {
+    background-color: var(--background2);
+    border: 1px solid var(--surface);
+    border-radius: 5px;
+    padding: 0.5em;
+    color: var(--color)
+}
+
+option {
+    background-color: var(--background2);
+    color: var(--text);
+}
