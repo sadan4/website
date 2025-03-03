@@ -11,7 +11,7 @@
 :root[data-theme="tokyo-night-storm"] {
     --background: #24283b;
     --background2: #1d202f;
-    --surface: #414868;
+    --surface: #282e44;
     --color: #a9b1d6;
     --accent: #7aa2f7;
 }
@@ -19,7 +19,7 @@
 :root[data-theme="tokyo-night-light"] {
     --background: #e6e7ed;
     --background2: #d9dae3;
-    --surface: #343b58;
+    --surface: #c1c2c7;
     --color: #343b58;
     --accent: #2959aa;
 }
